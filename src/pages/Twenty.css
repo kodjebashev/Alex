@@ -1,0 +1,16 @@
+.twenty {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.twenty-number {
+  margin: 0;
+  font-size: clamp(120px, 28vw, 340px);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: #fff;
+  text-shadow: 0 12px 40px rgba(190, 40, 110, 0.45);
+}

@@ -1,12 +1,122 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|c:\\users\\georgi\\desktop\\programing\\js\\alex\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|solutionrelative:src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|c:\\users\\georgi\\desktop\\programing\\js\\alex\\src\\navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|solutionrelative:src\\navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|c:\\users\\georgi\\desktop\\programing\\js\\alex\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|solutionrelative:src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|c:\\users\\georgi\\desktop\\programing\\js\\alex\\src\\floatingemojis.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|solutionrelative:src\\floatingemojis.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|c:\\users\\georgi\\desktop\\programing\\js\\alex\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|solutionrelative:src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|c:\\users\\georgi\\desktop\\programing\\js\\alex\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|solutionrelative:src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 393,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.css",
+              "DocumentMoniker": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\App.css",
+              "RelativeDocumentMoniker": "src\\App.css",
+              "ToolTip": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\App.css",
+              "RelativeToolTip": "src\\App.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-11-06T13:50:53.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NavBar.jsx",
+              "DocumentMoniker": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\NavBar.jsx",
+              "RelativeDocumentMoniker": "src\\NavBar.jsx",
+              "ToolTip": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\NavBar.jsx",
+              "RelativeToolTip": "src\\NavBar.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-11-06T13:50:37.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.jsx",
+              "DocumentMoniker": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\App.jsx",
+              "RelativeDocumentMoniker": "src\\App.jsx",
+              "ToolTip": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\App.jsx",
+              "RelativeToolTip": "src\\App.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-11-06T13:48:03.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FloatingEmojis.css",
+              "DocumentMoniker": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\FloatingEmojis.css",
+              "RelativeDocumentMoniker": "src\\FloatingEmojis.css",
+              "ToolTip": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\FloatingEmojis.css",
+              "RelativeToolTip": "src\\FloatingEmojis.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-11-06T13:27:26.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "main.jsx",
+              "DocumentMoniker": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\main.jsx",
+              "RelativeDocumentMoniker": "src\\main.jsx",
+              "ToolTip": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\main.jsx",
+              "RelativeToolTip": "src\\main.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-11-06T13:08:54.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\index.css",
+              "RelativeDocumentMoniker": "src\\index.css",
+              "ToolTip": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\index.css",
+              "RelativeToolTip": "src\\index.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-11-06T12:47:41.506Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

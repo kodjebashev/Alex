@@ -1,0 +1,48 @@
+.floaters {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.floater {
+  position: absolute;
+  line-height: 1;
+  opacity: 0;
+  user-select: none;
+  filter: drop-shadow(0 6px 10px rgba(190, 40, 110, 0.3));
+  animation: drift var(--dur) ease-in-out var(--delay) both;
+}
+
+@keyframes drift {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 16px, 0) rotate(calc(var(--rot) - 8deg)) scale(0.85);
+  }
+  30%,
+  65% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, -40px, 0) rotate(calc(var(--rot) + 8deg)) scale(1.05);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @keyframes drift {
+    0% {
+      opacity: 0;
+      transform: rotate(var(--rot));
+    }
+    30%,
+    65% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(var(--rot));
+    }
+  }
+}
