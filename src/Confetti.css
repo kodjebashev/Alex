@@ -1,0 +1,36 @@
+.confetti {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.piece {
+  position: absolute;
+  top: -30px;
+  line-height: 1;
+  border-radius: 2px;
+  opacity: 0;
+  animation: fall var(--dur) ease-in var(--delay) forwards;
+}
+
+@keyframes fall {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(var(--drift), 105vh, 0) rotate(var(--spin));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .piece {
+    animation-duration: 0.01s;
+  }
+}

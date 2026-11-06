@@ -1,16 +1,231 @@
 .twenty {
   flex: 1;
-  display: grid;
-  place-items: center;
-  padding: 24px;
+  width: min(1000px, 100%);
+  margin: 0 auto;
+  padding: 8px 20px 80px;
+  text-align: center;
+}
+
+.twenty-head {
+  margin-bottom: 40px;
 }
 
 .twenty-number {
   margin: 0;
-  font-size: clamp(120px, 28vw, 340px);
+  font-size: clamp(110px, 24vw, 260px);
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.04em;
   color: #fff;
   text-shadow: 0 12px 40px rgba(190, 40, 110, 0.45);
+}
+
+.twenty-sub {
+  font-size: clamp(20px, 3.5vw, 28px);
+  font-weight: 600;
+  color: #7a1a4d;
+}
+
+.section-title {
+  margin: 0 0 6px;
+  font-size: clamp(22px, 4vw, 30px);
+  font-weight: 700;
+  color: #3a0f2b;
+}
+
+.section-sub {
+  margin-bottom: 24px;
+  color: #7a1a4d;
+  font-size: 16px;
+}
+
+/* ---------- карти ---------- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 14px;
+  margin-bottom: 72px;
+}
+
+.card {
+  min-height: 130px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font: inherit;
+  color: #3a0f2b;
+  background: rgba(255, 255, 255, 0.6);
+  border: 2px solid #fff;
+  border-radius: 18px;
+  cursor: pointer;
+  box-shadow: 0 10px 24px -14px rgba(120, 20, 70, 0.6);
+  transition: transform 0.25s, background 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  background: #fff;
+}
+
+.card.open {
+  background: #fff;
+  animation: pop 0.45s ease;
+}
+
+.card:focus-visible {
+  outline: 3px solid #3a0f2b;
+  outline-offset: 2px;
+}
+
+.card-heart {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.card-num {
+  font-weight: 700;
+  color: #e0287a;
+}
+
+.card-text {
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.9) rotate(-2deg); }
+  60% { transform: scale(1.04) rotate(1deg); }
+  100% { transform: scale(1) rotate(0); }
+}
+
+/* ---------- торта ---------- */
+.cake-section {
+  padding-top: 8px;
+}
+
+.cake {
+  width: min(380px, 92%);
+  margin: 40px auto 28px;
+}
+
+.candles {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 6px 4px;
+  padding: 0 14px;
+}
+
+.candle {
+  position: relative;
+  height: 54px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.candle:focus-visible {
+  outline: 2px solid #3a0f2b;
+  border-radius: 4px;
+}
+
+.wax {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 10px;
+  height: 30px;
+  margin-left: -5px;
+  border-radius: 3px;
+  background: repeating-linear-gradient(135deg, #fff 0 6px, #ff8fbd 6px 12px);
+}
+
+.flame {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  width: 10px;
+  height: 18px;
+  margin-left: -5px;
+  border-radius: 50% 50% 50% 50% / 65% 65% 35% 35%;
+  background: radial-gradient(circle at 50% 70%, #fff6b0, #ffb629 70%);
+  box-shadow: 0 0 10px 3px rgba(255, 190, 60, 0.7);
+  transform-origin: 50% 100%;
+  transform: scale(0);
+  transition: transform 0.35s;
+}
+
+.candle.lit .flame {
+  transform: scale(1);
+  animation: flicker 0.9s ease-in-out infinite alternate;
+}
+
+@keyframes flicker {
+  from { transform: scale(1, 1) rotate(-3deg); }
+  to { transform: scale(0.9, 1.08) rotate(3deg); }
+}
+
+.cake-top {
+  height: 38px;
+  background: #fff;
+  border-radius: 20px 20px 6px 6px;
+  box-shadow: inset 0 -10px 0 #ffd1e6;
+}
+
+.cake-mid {
+  height: 70px;
+  margin: -2px 10px 0;
+  background: linear-gradient(#ff7fb3, #ff5fa2);
+  border-radius: 0 0 16px 16px;
+}
+
+.cake-plate {
+  height: 12px;
+  margin: 0 -14px;
+  background: #fff;
+  border-radius: 999px;
+  box-shadow: 0 10px 20px -8px rgba(120, 20, 70, 0.5);
+}
+
+.finale {
+  margin: 12px 0 20px;
+  font-size: clamp(22px, 4vw, 30px);
+  font-weight: 700;
+  color: #3a0f2b;
+}
+
+.cta {
+  display: inline-block;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  background: #e0287a;
+  padding: 14px 32px;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 14px 26px -12px rgba(190, 20, 100, 0.8);
+  transition: transform 0.2s, background 0.2s;
+}
+
+.cta:hover {
+  background: #c81e69;
+  transform: translateY(-2px);
+}
+
+.cta:focus-visible {
+  outline: 3px solid #3a0f2b;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card.open,
+  .candle.lit .flame {
+    animation: none;
+  }
 }

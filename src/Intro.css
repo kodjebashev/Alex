@@ -1,0 +1,129 @@
+.intro {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at 50% 30%, #ffd6e7 0%, #ffc2da 55%, #ff9fc6 100%);
+  transition: opacity 0.9s ease;
+}
+
+.intro.leaving {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.intro-inner {
+  text-align: center;
+  padding: 24px;
+}
+
+.envelope {
+  position: relative;
+  display: block;
+  width: min(340px, 80vw);
+  aspect-ratio: 3 / 2;
+  margin: 0 auto 32px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  perspective: 900px;
+  animation: bob 3s ease-in-out infinite;
+}
+
+.envelope.open {
+  animation: none;
+}
+
+.envelope:focus-visible {
+  outline: 3px solid #3a0f2b;
+  outline-offset: 8px;
+  border-radius: 12px;
+}
+
+.envelope > span {
+  position: absolute;
+  inset: 0;
+}
+
+.env-back {
+  background: #ff7fb3;
+  border-radius: 10px;
+  box-shadow: 0 24px 40px -16px rgba(120, 20, 70, 0.5);
+}
+
+.env-letter {
+  inset: 8% 8% 12% 8% !important;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  font-size: 44px;
+  background: #fff;
+  border-radius: 6px;
+  transition: transform 0.9s ease 0.35s;
+}
+
+.open .env-letter {
+  transform: translateY(-58%);
+}
+
+.env-pocket {
+  z-index: 3;
+  background: #ff93bf;
+  border-radius: 10px;
+  clip-path: polygon(0 100%, 0 30%, 50% 64%, 100% 30%, 100% 100%);
+}
+
+.env-flap {
+  z-index: 4;
+  height: 64%;
+  bottom: auto !important;
+  background: #ff5fa2;
+  border-radius: 10px 10px 0 0;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  transform-origin: top;
+  transition: transform 0.6s ease;
+  display: grid;
+  place-items: center;
+}
+
+.open .env-flap {
+  transform: rotateX(180deg);
+  z-index: 1;
+}
+
+.env-seal {
+  position: static !important;
+  font-size: 100px;
+  transform: translateY(-12%);
+  transition: opacity 0.2s;
+}
+
+.open .env-seal {
+  opacity: 0;
+}
+
+.intro-title {
+  margin: 0 0 8px;
+  font-size: clamp(34px, 7vw, 56px);
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 6px 24px rgba(190, 40, 110, 0.45);
+}
+
+.intro-hint {
+  font-size: 18px;
+  font-style: italic;
+  color: #7a1a4d;
+  padding-top: 1em;
+}
+
+@keyframes bob {
+  0%, 100% { transform: translateY(0) rotate(-1.5deg); }
+  50% { transform: translateY(-8px) rotate(1.5deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .envelope { animation: none; }
+}
