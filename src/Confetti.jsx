@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './Confetti.css'
 
 const COLORS = ['#ff4f9a', '#fff', '#ffd1e6', '#ffc83d', '#c77dff', '#ff8fbd']
@@ -20,6 +20,15 @@ function makePieces(n) {
 // Показва се веднъж при монтиране
 export default function Confetti() {
   const [pieces] = useState(() => makePieces(80))
+  const [visible, setVisible] = useState(true)
+
+  useEffect(() => {
+    const t = setTimeout(() => setVisible(false), 7000)
+    return () => clearTimeout(t)
+  }, [])
+
+  if (!visible) return null
+
   return (
     <div className="confetti" aria-hidden="true">
       {pieces.map((p) => (

@@ -1,0 +1,138 @@
+.cake-content { position: relative; z-index: 4; }
+
+/* тъмна стая, докато свещите горят */
+.dim {
+  position: fixed;
+  inset: 0;
+  z-index: 3;
+  background: rgba(20, 4, 15, 0.84);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease;
+}
+
+.dim.on { opacity: 1; }
+
+.cake-page.dark .section-title { color: #fff; }
+.cake-page.dark .section-sub { color: #ffd1e6; }
+
+.cake {
+  position: relative;
+  width: min(440px, 96%);
+  aspect-ratio: 420 / 340;
+  margin: 28px auto 20px;
+}
+
+.cake-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.cake-page.dark .cake { filter: drop-shadow(0 0 40px rgba(255, 170, 60, 0.35)); }
+
+/* свещите стоят върху горния ярус; долната им точка е в зададената позиция */
+.candle {
+  position: absolute;
+  width: 20px;
+  height: 58px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  transform: translate(-50%, -100%);
+}
+
+.candle:focus-visible { outline: 2px solid #fff; border-radius: 4px; }
+
+.wax {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 8px;
+  height: 32px;
+  margin-left: -4px;
+  border-radius: 3px 3px 2px 2px;
+  background: repeating-linear-gradient(135deg, #fff 0 6px, #ff8fbd 6px 12px);
+}
+
+.flame {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  width: 10px;
+  height: 18px;
+  margin-left: -5px;
+  border-radius: 50% 50% 50% 50% / 65% 65% 35% 35%;
+  background: radial-gradient(circle at 50% 70%, #fff6b0, #ffb629 70%);
+  box-shadow: 0 0 10px 3px rgba(255, 190, 60, 0.7);
+  transform-origin: 50% 100%;
+  transform: scale(0);
+  transition: transform 0.35s;
+}
+
+.candle.lit .flame {
+  transform: scale(1);
+  animation: flicker 0.9s ease-in-out infinite alternate;
+}
+
+.cake-page.dark .candle.lit .flame {
+  box-shadow: 0 0 22px 9px rgba(255, 190, 60, 0.85);
+}
+
+@keyframes flicker {
+  from { transform: scale(1, 1) rotate(-3deg); }
+  to { transform: scale(0.9, 1.08) rotate(3deg); }
+}
+
+.smoke {
+  position: absolute;
+  bottom: 42px;
+  left: 50%;
+  width: 6px;
+  height: 22px;
+  margin-left: -3px;
+  border-radius: 50%;
+  background: linear-gradient(rgba(220, 220, 220, 0.8), transparent);
+  opacity: 0;
+  animation: smoke 1.8s ease-out;
+}
+
+@keyframes smoke {
+  0% { opacity: 0.85; transform: translateY(0) scaleX(1); }
+  100% { opacity: 0; transform: translateY(-38px) scaleX(2.4); }
+}
+
+/* действия */
+.cake-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 0 4px;
+}
+
+.cta.alt {
+  color: #e0287a;
+  background: #fff;
+  box-shadow: 0 14px 26px -14px rgba(120, 20, 70, 0.6);
+}
+
+.cta.alt:hover { background: #ffe3ef; }
+
+.mic-note { flex-basis: 100%; font-size: 14px; color: #ffd1e6; }
+
+.finale {
+  margin: 16px 0 20px;
+  font-size: clamp(22px, 4vw, 30px);
+  font-weight: 700;
+  color: #3a0f2b;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .candle.lit .flame, .smoke { animation: none; }
+  .dim { transition: none; }
+}

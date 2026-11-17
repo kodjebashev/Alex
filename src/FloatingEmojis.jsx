@@ -11,8 +11,9 @@ function screenRect() {
   const vh = window.innerHeight
   const nav = 64 // височина на навигацията
   const pad = vw <= 640 ? 16 : 24
-  const w = Math.min(1100, vw - pad * 2)
-  const h = Math.min((w * 9) / 16, vh - nav - 48)
+  const maxH = vh - nav - 48
+  const w = Math.min(1100, vw - pad * 2, (maxH * 16) / 9)
+  const h = (w * 9) / 16
   const m = 10
   const centerY = nav + (vh - nav) / 2
   return {
@@ -61,8 +62,10 @@ export default function FloatingEmojis() {
     Array.from({ length: COUNT }, () => roll(true)),
   )
 
-  const respawn = (index) =>
-    setItems((prev) => prev.map((it, i) => (i === index ? roll(false) : it)))
+  const respawn = (index) => {
+    const fresh = roll(false)
+    setItems((prev) => prev.map((it, i) => (i === index ? fresh : it)))
+  }
 
   return (
     <div className="floaters" aria-hidden="true">

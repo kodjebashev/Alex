@@ -1,0 +1,106 @@
+.timeline {
+  list-style: none;
+  margin: 32px 0 48px;
+  padding: 0;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  margin-left: -1.5px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+.tl-item {
+  position: relative;
+  width: 50%;
+  padding: 0 36px 36px;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s, transform 0.7s;
+}
+
+.tl-item.seen {
+  opacity: 1;
+  transform: none;
+}
+
+.tl-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.tl-item.right {
+  left: 50%;
+}
+
+.tl-dot {
+  position: absolute;
+  top: 4px;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  background: #ffc2da;
+  border-radius: 50%;
+}
+
+.left .tl-dot { right: -17px; }
+.right .tl-dot { left: -17px; }
+
+.tl-card {
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 16px;
+  box-shadow: 0 10px 24px -14px rgba(120, 20, 70, 0.6);
+}
+
+.tl-when {
+  font-size: 14px;
+  font-weight: 700;
+  color: #e0287a;
+}
+
+.tl-card h3 {
+  margin: 2px 0 6px;
+  font-size: 20px;
+  color: #3a0f2b;
+}
+
+.tl-card p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.tl-card img {
+  max-width: 100%;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+@media (max-width: 640px) {
+  .timeline::before { left: 17px; }
+
+  .tl-item,
+  .tl-item.left,
+  .tl-item.right {
+    width: 100%;
+    left: 0;
+    padding: 0 0 28px 52px;
+    text-align: left;
+  }
+
+  .tl-item .tl-dot { left: 0; right: auto; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tl-item { transition: none; opacity: 1; transform: none; }
+}
