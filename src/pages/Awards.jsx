@@ -93,9 +93,9 @@ export default function Awards() {
             ))}
           </div>
 
+          {all && <Confetti />}
           {all && (
             <section className="special">
-              <Confetti />
               <div className="award-trophy">🏆</div>
               <h3 className="award-cat">{SPECIAL.category}</h3>
               <p className="award-name">Александра 👑</p>
@@ -108,7 +108,7 @@ export default function Awards() {
           )}
         </div>
       </div>
-      <a className="cta" href="#/cake">Към тортата →</a>
+      <a className="cta" href="#/cake">Нататък →</a>
     </main>
   )
 }

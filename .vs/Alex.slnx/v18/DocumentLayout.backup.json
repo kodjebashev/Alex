@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|c:\\users\\georgi\\desktop\\programing\\js\\alex\\src\\pages\\awards.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|solutionrelative:src\\pages\\awards.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|c:\\users\\georgi\\desktop\\programing\\js\\alex\\src\\pages\\awards.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|solutionrelative:src\\pages\\awards.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|c:\\users\\georgi\\desktop\\programing\\js\\alex\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|solutionrelative:src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
@@ -19,8 +11,20 @@
       "RelativeMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|solutionrelative:src\\routes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|c:\\users\\georgi\\desktop\\programing\\js\\alex\\src\\reasons.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|solutionrelative:src\\reasons.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|c:\\users\\georgi\\desktop\\programing\\js\\alex\\src\\content.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|solutionrelative:src\\content.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|c:\\users\\georgi\\desktop\\programing\\js\\alex\\src\\pages\\awards.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|solutionrelative:src\\pages\\awards.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|c:\\users\\georgi\\desktop\\programing\\js\\alex\\src\\pages\\awards.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|solutionrelative:src\\pages\\awards.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|c:\\users\\georgi\\desktop\\programing\\js\\alex\\src\\pages\\months.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -59,10 +63,6 @@
       "RelativeMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|solutionrelative:src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|c:\\users\\georgi\\desktop\\programing\\js\\alex\\src\\reasons.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|solutionrelative:src\\reasons.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|c:\\users\\georgi\\desktop\\programing\\js\\alex\\src\\confetti.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{0DCBE729-322C-360B-D3B8-2919A880E1F5}|alex.esproj|solutionrelative:src\\confetti.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
@@ -90,11 +90,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 393,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Awards.css",
               "DocumentMoniker": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\pages\\Awards.css",
               "RelativeDocumentMoniker": "src\\pages\\Awards.css",
@@ -103,24 +103,11 @@
               "ViewState": "AgIAAFMAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-11-07T21:31:38.628Z",
-              "EditorCaption": ""
+              "OwnerCaption": "%2"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Awards.jsx",
-              "DocumentMoniker": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\pages\\Awards.jsx",
-              "RelativeDocumentMoniker": "src\\pages\\Awards.jsx",
-              "ToolTip": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\pages\\Awards.jsx",
-              "RelativeToolTip": "src\\pages\\Awards.jsx",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-11-07T21:31:36.673Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "routes.js",
               "DocumentMoniker": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\routes.js",
               "RelativeDocumentMoniker": "src\\routes.js",
@@ -129,24 +116,24 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2026-11-07T21:29:12.373Z",
-              "EditorCaption": ""
+              "OwnerCaption": "%2"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "content.js",
               "DocumentMoniker": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\content.js",
               "RelativeDocumentMoniker": "src\\content.js",
               "ToolTip": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\content.js",
               "RelativeToolTip": "src\\content.js",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2026-11-07T21:25:58.633Z",
-              "EditorCaption": ""
+              "OwnerCaption": "%2"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Months.jsx",
               "DocumentMoniker": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\pages\\Months.jsx",
               "RelativeDocumentMoniker": "src\\pages\\Months.jsx",
@@ -155,11 +142,11 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2026-11-07T21:25:31.599Z",
-              "EditorCaption": ""
+              "OwnerCaption": "%2"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "To do.txt",
               "DocumentMoniker": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\To do.txt",
               "RelativeDocumentMoniker": "To do.txt",
@@ -168,11 +155,11 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2026-11-06T16:38:33.193Z",
-              "EditorCaption": ""
+              "OwnerCaption": "%2"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Twenty.jsx",
               "DocumentMoniker": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\pages\\Twenty.jsx",
               "RelativeDocumentMoniker": "src\\pages\\Twenty.jsx",
@@ -181,11 +168,11 @@
               "ViewState": "AgIAAAcAAAAAAAAAAAAQwCYAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2026-11-06T16:30:04.601Z",
-              "EditorCaption": ""
+              "OwnerCaption": "%2"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "vite.config.js",
               "DocumentMoniker": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\vite.config.js",
               "RelativeDocumentMoniker": "vite.config.js",
@@ -194,11 +181,11 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2026-11-06T16:07:18.85Z",
-              "EditorCaption": ""
+              "OwnerCaption": "%2"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Confetti.jsx",
               "DocumentMoniker": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\Confetti.jsx",
               "RelativeDocumentMoniker": "src\\Confetti.jsx",
@@ -206,11 +193,12 @@
               "RelativeToolTip": "src\\Confetti.jsx",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-11-06T14:09:52.475Z"
+              "WhenOpened": "2026-11-06T14:09:52.475Z",
+              "OwnerCaption": "%2"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Intro.css",
               "DocumentMoniker": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\Intro.css",
               "RelativeDocumentMoniker": "src\\Intro.css",
@@ -218,11 +206,12 @@
               "RelativeToolTip": "src\\Intro.css",
               "ViewState": "AgIAAGMAAAAAAAAAAAAAAHYAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-11-06T14:09:47.361Z"
+              "WhenOpened": "2026-11-06T14:09:47.361Z",
+              "OwnerCaption": "%2"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 2,
               "Title": "reasons.js",
               "DocumentMoniker": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\reasons.js",
               "RelativeDocumentMoniker": "src\\reasons.js",
@@ -230,7 +219,39 @@
               "RelativeToolTip": "src\\reasons.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-11-06T14:09:19.079Z"
+              "WhenOpened": "2026-11-06T14:09:19.079Z",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.jsx",
+              "DocumentMoniker": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\App.jsx",
+              "RelativeDocumentMoniker": "src\\App.jsx",
+              "ToolTip": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\App.jsx",
+              "RelativeToolTip": "src\\App.jsx",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAmwBUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-11-06T13:48:03.044Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Awards.jsx",
+              "DocumentMoniker": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\pages\\Awards.jsx",
+              "RelativeDocumentMoniker": "src\\pages\\Awards.jsx",
+              "ToolTip": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\pages\\Awards.jsx",
+              "RelativeToolTip": "src\\pages\\Awards.jsx",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-11-07T21:31:36.673Z",
+              "OwnerCaption": "%2"
             },
             {
               "$type": "Document",
@@ -242,24 +263,12 @@
               "RelativeToolTip": "src\\App.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-11-06T13:50:53.82Z"
+              "WhenOpened": "2026-11-06T13:50:53.82Z",
+              "OwnerCaption": "%2"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "App.jsx",
-              "DocumentMoniker": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\App.jsx",
-              "RelativeDocumentMoniker": "src\\App.jsx",
-              "ToolTip": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\App.jsx",
-              "RelativeToolTip": "src\\App.jsx",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAQwBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-11-06T13:48:03.044Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Months.css",
               "DocumentMoniker": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\pages\\Months.css",
               "RelativeDocumentMoniker": "src\\pages\\Months.css",
@@ -268,7 +277,7 @@
               "ViewState": "AgIAAEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-11-07T21:25:42.909Z",
-              "EditorCaption": ""
+              "OwnerCaption": "%2"
             },
             {
               "$type": "Document",
@@ -280,7 +289,8 @@
               "RelativeToolTip": "src\\NavBar.jsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-11-06T13:50:37.444Z"
+              "WhenOpened": "2026-11-06T13:50:37.444Z",
+              "OwnerCaption": "%2"
             },
             {
               "$type": "Document",
@@ -292,11 +302,12 @@
               "RelativeToolTip": "src\\FloatingEmojis.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-11-06T13:27:26.487Z"
+              "WhenOpened": "2026-11-06T13:27:26.487Z",
+              "OwnerCaption": "%2"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "main.jsx",
               "DocumentMoniker": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\main.jsx",
               "RelativeDocumentMoniker": "src\\main.jsx",
@@ -304,11 +315,12 @@
               "RelativeToolTip": "src\\main.jsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-11-06T13:08:54.501Z"
+              "WhenOpened": "2026-11-06T13:08:54.501Z",
+              "OwnerCaption": "%2"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Intro.jsx",
               "DocumentMoniker": "C:\\Users\\Georgi\\Desktop\\Programing\\JS\\Alex\\src\\Intro.jsx",
               "RelativeDocumentMoniker": "src\\Intro.jsx",
@@ -316,7 +328,8 @@
               "RelativeToolTip": "src\\Intro.jsx",
               "ViewState": "AgIAABcAAAAAAAAAAAAAACIAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-11-06T14:10:07.175Z"
+              "WhenOpened": "2026-11-06T14:10:07.175Z",
+              "OwnerCaption": "%2"
             },
             {
               "$type": "Document",
@@ -328,7 +341,8 @@
               "RelativeToolTip": "src\\Confetti.css",
               "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-11-06T14:10:01.692Z"
+              "WhenOpened": "2026-11-06T14:10:01.692Z",
+              "OwnerCaption": "%2"
             },
             {
               "$type": "Document",
@@ -340,7 +354,8 @@
               "RelativeToolTip": "src\\index.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-11-06T12:47:41.506Z"
+              "WhenOpened": "2026-11-06T12:47:41.506Z",
+              "OwnerCaption": "%2"
             }
           ]
         }

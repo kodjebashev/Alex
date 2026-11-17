@@ -9,6 +9,7 @@
   height: var(--nav-h);
   display: flex;
   align-items: center;
+  justify-content: center;
   justify-content: safe center;
   gap: 8px;
   padding: 14px 16px 0;

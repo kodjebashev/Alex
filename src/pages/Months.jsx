@@ -43,7 +43,7 @@ export default function Months() {
           <Item key={i} item={m} index={i} />
         ))}
       </ol>
-      <a className="cta" href="#/20">Към 20-те причини →</a>
+      <a className="cta" href="#/photos">Нататък →</a>
     </main>
   )
 }

@@ -16,7 +16,7 @@ export default function Secret({ onClose }) {
         <h2 className="modal-title">{SECRET.title}</h2>
         {SECRET.image && <img className="modal-img" src={SECRET.image} alt="" />}
         <p className="modal-text">{SECRET.text}</p>
-        <button type="button" className="cta" onClick={onClose}>Затвори 💗</button>
+        <button type="button" className="cta" autoFocus onClick={onClose}>Затвори 💗</button>
       </div>
     </div>
   )

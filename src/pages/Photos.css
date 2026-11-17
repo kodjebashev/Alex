@@ -1,0 +1,255 @@
+/* ---------- сцена с апарата ---------- */
+.cam-scene {
+  min-height: calc(100svh - var(--nav-h) - 24px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+/* W = ширина на апарата; всичко се мери спрямо нея */
+.cam-wrap {
+  --W: min(250px, 70vw);
+  position: relative;
+  width: var(--W);
+  padding: calc(var(--W) * 0.56) 0 calc(var(--W) * 0.85);
+}
+
+.cam {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  filter: drop-shadow(0 18px 18px rgba(90, 60, 140, 0.3));
+}
+
+/* снимка 54 × 86 мм излиза от отвора 66 мм отгоре */
+.cam-photo {
+  position: absolute;
+  z-index: 0;
+  top: calc(var(--W) * 0.59);
+  left: 50%;
+  width: calc(var(--W) * 0.512);
+  margin-left: calc(var(--W) * -0.256);
+}
+
+.cam-wrap[data-phase='2'] .cam-photo { animation: eject 1.6s cubic-bezier(0.3, 0.1, 0.3, 1) forwards; }
+.cam-wrap[data-phase='3'] .cam-photo { z-index: 2; animation: fall 1.4s cubic-bezier(0.45, 0, 0.75, 0.55) forwards; }
+.cam-wrap[data-phase='4'] .cam-photo { z-index: 2; animation: vanish 0.5s ease forwards; }
+
+@keyframes eject {
+  to { transform: translateY(calc(var(--W) * -0.52)); }
+}
+
+@keyframes fall {
+  0% { transform: translateY(calc(var(--W) * -0.52)) rotate(0); }
+  60% { transform: translate(calc(var(--W) * 0.04), calc(var(--W) * 0.9)) rotate(-6deg); }
+  80% { transform: translate(calc(var(--W) * 0.05), calc(var(--W) * 1.22)) rotate(-9deg); }
+  100% { transform: translate(calc(var(--W) * 0.04), calc(var(--W) * 1.18)) rotate(-7deg); }
+}
+
+@keyframes vanish {
+  from { opacity: 1; transform: translate(calc(var(--W) * 0.04), calc(var(--W) * 1.18)) rotate(-7deg); }
+  to { opacity: 0; transform: translate(calc(var(--W) * 0.04), calc(var(--W) * 1.18)) rotate(-7deg); }
+}
+
+/* оранжевият пръстен на самоснимачката пулсира */
+.led { animation: pulse 1.6s ease-in-out infinite alternate; }
+@keyframes pulse { from { opacity: 0.72; } to { opacity: 1; } }
+
+.shutter { transform-box: fill-box; transform-origin: center; }
+.cam-wrap[data-phase='1'] .shutter { animation: press 0.35s ease; }
+.cam-wrap[data-phase='1'] .flash-win { animation: glow 0.7s ease-out; }
+
+@keyframes press { 50% { transform: scale(0.78); } }
+@keyframes glow {
+  0% { filter: brightness(1); }
+  20% { filter: brightness(2.2) drop-shadow(0 0 14px #fff); }
+  100% { filter: brightness(1); }
+}
+
+.flash-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 15;
+  background: #fff;
+  pointer-events: none;
+  animation: flash 0.7s ease-out forwards;
+}
+
+@keyframes flash {
+  0% { opacity: 0; }
+  15% { opacity: 0.92; }
+  100% { opacity: 0; }
+}
+
+.cam-cap {
+  min-height: 1.6em;
+  font-size: 20px;
+  font-weight: 700;
+  color: #7a1a4d;
+}
+
+/* ---------- албум ---------- */
+.album {
+  margin: 24px 0 40px;
+  padding: 14px;
+  background: #b83a74;
+  border-radius: 28px;
+  box-shadow: 0 24px 40px -20px rgba(120, 20, 70, 0.6);
+}
+
+.album-page {
+  padding: 28px 18px 32px;
+  background: #fff6ee;
+  border-radius: 18px;
+  outline: 2px dashed #e7a9c4;
+  outline-offset: -10px;
+}
+
+.featured {
+  display: flex;
+  justify-content: center;
+  margin: 18px auto 34px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.featured .card { width: min(230px, 60vw); }
+
+.featured.in {
+  visibility: visible;
+  animation: land 0.9s cubic-bezier(0.2, 0.9, 0.3, 1.2) forwards;
+}
+
+@keyframes land {
+  0% { opacity: 0; transform: translateY(-70px) rotate(-10deg) scale(1.15); }
+  60% { opacity: 1; }
+  100% { opacity: 1; transform: rotate(-2deg); }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 24px 16px;
+}
+
+.grid .card {
+  transform: rotate(var(--r, 0deg));
+  transition: transform 0.25s;
+}
+
+.grid button.card:hover { transform: translateY(-4px) rotate(0deg); }
+
+.all-done {
+  margin-top: 28px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #b83a74;
+}
+
+/* ---------- картичка Instax mini ---------- */
+.card {
+  container-type: inline-size;
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 54 / 86;
+  padding: 0;
+  border: 0;
+  border-radius: 3px;
+  background: #fffdf8;
+  box-shadow: 0 8px 18px -8px rgba(80, 30, 60, 0.55), 0 0 0 1px rgba(0, 0, 0, 0.05);
+  font: inherit;
+}
+
+button.card { cursor: pointer; }
+button.card:focus-visible { outline: 3px solid #3a0f2b; outline-offset: 3px; }
+
+.card-img {
+  position: absolute;
+  top: 5%;
+  left: 8.5%;
+  right: 8.5%;
+  height: 72%;
+  overflow: hidden;
+  display: block;
+  background: linear-gradient(160deg, #ffd6e7, #ff9fc6);
+}
+
+.card-img img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 3.5s ease;
+}
+
+.ph {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  font-size: 18cqw;
+  color: #fff;
+}
+
+.ph small { font-size: 9cqw; font-weight: 700; }
+
+/* "непроявена" снимка: млечна пелена, която бавно изчезва */
+.card-img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: #e8e6dc;
+  opacity: 0.92;
+  transition: opacity 3.5s ease;
+}
+
+.card:not(.developed) .card-img img {
+  filter: grayscale(1) contrast(0.6) brightness(1.4) blur(6px);
+}
+
+.card.developed .card-img::after { opacity: 0; }
+
+.tap {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  font-size: 7cqw;
+  color: #8a897d;
+  transition: opacity 0.5s;
+}
+
+.card.developed .tap,
+.cam-photo .tap { opacity: 0; }
+
+.card-date {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 6%;
+  text-align: center;
+  font-family: 'Segoe Script', 'Bradley Hand', 'Comic Sans MS', cursive;
+  font-size: 13px;
+  font-size: 7.5cqw;
+  color: #4a3a5a;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cam-wrap .cam-photo,
+  .flash-screen,
+  .shutter,
+  .led,
+  .flash-win { animation: none !important; }
+  .featured.in { animation: none; opacity: 1; }
+  .card-img img, .card-img::after { transition-duration: 0.6s; }
+}

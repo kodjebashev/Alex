@@ -71,7 +71,7 @@ function Video() {
             <p className="placeholder-title">
               {video?.error ?? 'Няма зададено видео'}
             </p>
-            <p className="placeholder-hint">Постави линк в App.jsx → VIDEO_URL</p>
+            <p className="placeholder-hint">Постави линк в pages/Video.jsx → VIDEO_URL</p>
           </div>
         )}
       </div>

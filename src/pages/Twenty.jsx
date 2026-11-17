@@ -49,7 +49,7 @@ function Twenty() {
         </div>
       </section>
 
-      <a className="cta" href="#/balloons">Към балоните →</a>
+      <a className="cta" href="#/balloons">Нататък →</a>
     </main>
   )
 }

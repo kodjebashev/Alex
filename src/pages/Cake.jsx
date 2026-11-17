@@ -119,7 +119,14 @@ export default function CakePage() {
   const lightAll = () =>
     states.forEach((s, i) => s === 'unlit' && setTimeout(() => change(i, 'unlit', 'lit'), i * 90))
 
+  const stopMic = () => {
+    stopRef.current?.()
+    stopRef.current = null
+    setMic('idle')
+  }
+
   const blowAll = () => {
+    stopMic() // микрофонът не остава включен след духането
     for (let i = 0; i < CANDLES; i++) setTimeout(() => change(i, 'lit', 'out'), i * 110)
   }
 
@@ -152,9 +159,6 @@ export default function CakePage() {
         loud = rms > 0.25 ? loud + 1 : 0 // праг на силата – увеличи, ако се задейства от говор
         if (loud > 6) {
           blowAll()
-          stop()
-          stopRef.current = null
-          setMic('idle')
           return
         }
         raf = requestAnimationFrame(tick)
@@ -165,12 +169,6 @@ export default function CakePage() {
     } catch {
       setMic('denied')
     }
-  }
-
-  const stopMic = () => {
-    stopRef.current?.()
-    stopRef.current = null
-    setMic('idle')
   }
 
   useEffect(() => () => stopRef.current?.(), [])
@@ -230,7 +228,7 @@ export default function CakePage() {
             <p className="finale">Честит 20-и рожден ден, Александра! 👑</p>
             <div className="cake-actions">
               <button type="button" className="cta alt" onClick={() => setSlice(true)}>Отрежи парче 🍰</button>
-              <a className="cta" href="#/video">Гледай пожеланията 🎬</a>
+              <a className="cta" href="#/video">Нататък →</a>
             </div>
           </>
         )}
@@ -241,7 +239,7 @@ export default function CakePage() {
           <div className="modal" role="dialog" aria-modal="true" onClick={(e) => e.stopPropagation()}>
             <div className="modal-emoji">🍰</div>
             <p className="modal-text">{SLICE_MESSAGE}</p>
-            <button type="button" className="cta" onClick={() => setSlice(false)}>Затвори 💗</button>
+            <button type="button" className="cta" autoFocus onClick={() => setSlice(false)}>Затвори 💗</button>
           </div>
         </div>
       )}

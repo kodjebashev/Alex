@@ -8,6 +8,7 @@ import Awards from './pages/Awards.jsx'
 import Balloons from './pages/Balloons.jsx'
 import Cake from './pages/Cake.jsx'
 import Months from './pages/Months.jsx'
+import Photos from './pages/Photos.jsx'
 import Twenty from './pages/Twenty.jsx'
 import Video from './pages/Video.jsx'
 
@@ -22,6 +23,7 @@ const SECRET_TAPS = 5
 
 // Тези страници остават монтирани, за да не се губи напредъкът в тях
 const PAGES = {
+  '#/photos': Photos,
   '#/20': Twenty,
   '#/months': Months,
   '#/awards': Awards,
@@ -116,7 +118,7 @@ function App() {
 
       {Object.entries(PAGES).map(([path, Page]) => (
         <div key={path} style={{ display: route === path ? 'contents' : 'none' }}>
-          <Page />
+          <Page active={route === path} />
         </div>
       ))}
       {route === '#/video' && <Video />}

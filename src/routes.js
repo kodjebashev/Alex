@@ -1,5 +1,6 @@
 export const ROUTES = [
   { path: '#/months', label: 'Месеци' },
+  { path: '#/photos', label: 'Снимки' },
   { path: '#/20', label: '20', crown: true },
   { path: '#/balloons', label: 'Балони' },
   { path: '#/awards', label: 'Оскари' },

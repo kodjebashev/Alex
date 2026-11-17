@@ -86,8 +86,8 @@ export default function Balloons() {
           <div className="modal" role="dialog" aria-modal="true">
             <div className="modal-emoji">🎈</div>
             <p className="modal-text">{WISHES[wish]}</p>
-            <button type="button" className="cta" onClick={closeWish}>
-              {last ? 'Към наградите 🏆' : 'Продължи'}
+            <button type="button" className="cta" autoFocus onClick={closeWish}>
+              {last ? 'Нататък →' : 'Продължи'}
             </button>
           </div>
         </div>
