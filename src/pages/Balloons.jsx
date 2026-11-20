@@ -5,6 +5,8 @@ import './Balloons.css'
 
 const COLORS = ['#ff4f9a', '#ffb3d1', '#c77dff', '#ffc83d', '#6ec6ff', '#ff7a7a', '#7ee0b5']
 
+const TAPS_TO_POP = 2 // натискания подред за спукване
+
 const BALLOONS = Array.from({ length: 20 }, (_, i) => ({
   id: i,
   color: COLORS[i % COLORS.length],
@@ -23,11 +25,11 @@ export default function Balloons() {
   const press = (id) => {
     if (locked || popped.has(id)) return
     const n = active?.id === id ? active.n + 1 : 1
-    if (n < 3) {
+    if (n < TAPS_TO_POP) {
       setActive({ id, n })
       return
     }
-    // 3-то подред натискане: пукане, после пожелание
+    // последното подред натискане: пукане, после пожелание
     setActive(null)
     setLocked(true)
     setPopped((prev) => new Set(prev).add(id))
@@ -37,16 +39,18 @@ export default function Balloons() {
   const closeWish = () => {
     setWish(null)
     setLocked(false)
-    if (popped.size === total) window.location.hash = '#/awards'
   }
 
   const last = popped.size === total
+  const finished = last && wish === null // всички са спукани и последното пожелание е затворено
 
   return (
     <main className="page">
       <h2 className="section-title">20 балона, 20 пожелания</h2>
       <p className="section-sub">
-        Натисни един и същ балон 3 пъти подред, за да го спукаш ({popped.size}/{total})
+        {finished
+          ? 'Всички балони са спукани! 🎉'
+          : `Натисни един и същ балон ${TAPS_TO_POP} пъти подред, за да го спукаш (${popped.size}/${total})`}
       </p>
 
       <div className="balloons">
@@ -80,14 +84,20 @@ export default function Balloons() {
         })}
       </div>
 
+      {finished && (
+        <>
+          <Confetti />
+          <a className="cta" href="#/awards">Нататък →</a>
+        </>
+      )}
+
       {wish !== null && (
         <div className="overlay">
-          {last && <Confetti />}
           <div className="modal" role="dialog" aria-modal="true">
             <div className="modal-emoji">🎈</div>
             <p className="modal-text">{WISHES[wish]}</p>
             <button type="button" className="cta" autoFocus onClick={closeWish}>
-              {last ? 'Нататък →' : 'Продължи'}
+              {last ? 'Готово 🎉' : 'Продължи'}
             </button>
           </div>
         </div>
